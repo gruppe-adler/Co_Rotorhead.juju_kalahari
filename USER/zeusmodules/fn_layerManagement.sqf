@@ -50,4 +50,4 @@ if (!isServer) exitWith {};
 
 	}, [_objects1, _groups1, _identifier]] call CBA_fnc_waitUntilAndExecute;
 
-} forEach ["blufor_convoy_1"];
+} forEach ["idap_convoy_1"];

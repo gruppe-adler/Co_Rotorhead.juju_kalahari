@@ -79,91 +79,25 @@
 };
 
 
-
-["Dushmaan Taal - Helicopter UH60", "UH60 Gunning Loiter - Start North", {
+["CO Rotorhead - Helicopters", "Spawn Drug Victim", {
     params ["_position", "_object"];
     
-    private _start = [12040.6,17854.3,0];
-    private _type = "rhs_uh60m_d";
-    [_start, _position, _type] execVM "USER\scripts\loiterAttack.sqf";
+    ["GRAD_missionControl_drugVictim", [_position, false]] call CBA_fnc_serverEvent;
      
 }] call zen_custom_modules_fnc_register;
 
-["Dushmaan Taal - Helicopter CH47", "CH47 Gunning Loiter - Start North", {
+["CO Rotorhead - Helicopters", "Spawn Drug Victim Boss", {
     params ["_position", "_object"];
     
-    private _start = [12040.6,17854.3,0];
-    private _type = "RHS_CH_47F_light";
-    [_start, _position, _type] execVM "USER\scripts\loiterAttack.sqf";
-     
-}] call zen_custom_modules_fnc_register;
-
-["Dushmaan Taal - Helicopter CH53E", "CH53E Gunning Loiter - Start North", {
-    params ["_position", "_object"];
-    
-    private _start = [12040.6,17854.3,0];
-    private _type = "rhsusf_CH53E_USMC_GAU21_D";
-    [_start, _position, _type] execVM "USER\scripts\loiterAttack.sqf";
+    ["GRAD_missionControl_drugVictim", [_position, true]] call CBA_fnc_serverEvent;
      
 }] call zen_custom_modules_fnc_register;
 
 
-
-["Dushmaan Taal - Helicopter UH60", "UH60 Gunning Loiter - Start South", {
+["CO Rotorhead - Helicopters", "Convoy Start South", {
     params ["_position", "_object"];
     
-    private _start = [11811.2,2291.56,0];
-    private _type = "rhs_uh60m_d";
-    [_start, _position, _type] execVM "USER\scripts\loiterAttack.sqf";
-     
-}] call zen_custom_modules_fnc_register;
-
-["Dushmaan Taal - Helicopter CH47", "CH47 Gunning Loiter - Start South", {
-    params ["_position", "_object"];
-    
-    private _start = [11811.2,2291.56,0];
-    private _type = "RHS_CH_47F_light";
-    [_start, _position, _type] execVM "USER\scripts\loiterAttack.sqf";
-     
-}] call zen_custom_modules_fnc_register;
-
-["Dushmaan Taal - Helicopter CH53E", "CH53E Gunning Loiter - Start North", {
-    params ["_position", "_object"];
-    
-    private _start = [11811.2,2291.56,0];
-    private _type = "rhsusf_CH53E_USMC_GAU21_D";
-    [_start, _position, _type] execVM "USER\scripts\loiterAttack.sqf";
-     
-}] call zen_custom_modules_fnc_register;
-
-
-["Dushmaan Taal - Helicopter UH60", "UH60 Reinforcements - Start South", {
-    params ["_position", "_object"];
-    
-    private _start = [11811.2,2331.31,0];
-     private _type = "rhs_uh60m_d";
-    [_start, _position, _type] execVM "USER\scripts\uh60reinf.sqf";
-     
-}] call zen_custom_modules_fnc_register;
-
-["Dushmaan Taal - Helicopter CH47", "CH47 Reinforcements - Start South", {
-    params ["_position", "_object"];
-    
-    private _start = [11811.2,2331.31,0];
-     private _type = "RHS_CH_47F_light";
-    [_start, _position, _type] execVM "USER\scripts\uh60reinf.sqf";
-     
-}] call zen_custom_modules_fnc_register;
-
-
-
-
-
-
-["Dushmaan Taal - Helicopters", "Convoy Start South", {
-    params ["_position", "_object"];
-    
-    missionNamespace setVariable ["blufor_convoy_1", true, true];
+    missionNamespace setVariable ["idap_convoy_1", true, true];
      
 }] call zen_custom_modules_fnc_register;
 
