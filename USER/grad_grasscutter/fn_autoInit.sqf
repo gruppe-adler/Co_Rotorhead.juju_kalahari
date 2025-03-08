@@ -1,7 +1,6 @@
 // Markers into grass cutters script by Sa-Matra
 {
     if(
-        markerShape _x == "RECTANGLE" &&
         toLower _x find "grasscutter" == 0
     ) then {
         if(hasInterface) then {

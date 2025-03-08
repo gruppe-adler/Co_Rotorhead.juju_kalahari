@@ -6,6 +6,44 @@
 #define VOLUME 4
 #define DISTANCE 15
 
+class youwilldienow
+{
+    name = "youwilldienow";
+    sound[] = {"USER\sounds\youwilldienow.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class fuckoff
+{
+    name = "fuckoff";
+    sound[] = {"USER\sounds\fuckoff.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class youwilldienow2
+{
+    name = "youwilldienow2";
+    sound[] = {"USER\sounds\youwilldienow2.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class youwillpayforthis
+{
+    name = "youwillpayforthis";
+    sound[] = {"USER\sounds\youwillpayforthis.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+class horny_1
+{
+    name = "horny_1";
+    sound[] = {"USER\sounds\horny_1.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
+
+
+class buzz
+{
+    name = "buzz";
+    sound[] = {"USER\sounds\buzz.ogg", 1, 1, 50};
+    titles[] = {0,""};
+};
 
 class remote_start
 {
