@@ -8,3 +8,16 @@ onLoadMission = "";                                                             
 loadScreen = "data\loadpic.paa";                                                // Ladebild
 overviewPicture = "";                                                           // Bild, das in der Missionsauswahl angezeigt wird
 overviewText = "";                                                              // Text, der in der Missionsauswahl angezeigt wird
+
+class CfgIdentities
+{
+	class ElJefe
+	{
+		face = "AfricanHead_01";
+		glasses = "";
+		name = "El Jefe";
+		nameSound = "El Jefe";
+		pitch = 1.0;
+		speaker = "Male01ENG";
+	};
+};

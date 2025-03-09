@@ -79,14 +79,14 @@
 };
 
 
-["CO Rotorhead - Helicopters", "Spawn Drug Victim", {
+["CO Rotorhead - Drug People", "Spawn Drug Victim", {
     params ["_position", "_object"];
     
     ["GRAD_missionControl_drugVictim", [_position, false]] call CBA_fnc_serverEvent;
      
 }] call zen_custom_modules_fnc_register;
 
-["CO Rotorhead - Helicopters", "Spawn Drug Victim Boss", {
+["CO Rotorhead - Drug People", "Spawn Drug Victim Boss", {
     params ["_position", "_object"];
     
     ["GRAD_missionControl_drugVictim", [_position, true]] call CBA_fnc_serverEvent;
@@ -94,14 +94,19 @@
 }] call zen_custom_modules_fnc_register;
 
 
-["CO Rotorhead - Helicopters", "Convoy Start South", {
+["CO Rotorhead - Convoy", "IDAP Convoy Start", {
     params ["_position", "_object"];
     
     missionNamespace setVariable ["idap_convoy_1", true, true];
      
 }] call zen_custom_modules_fnc_register;
 
-
+["CO Rotorhead - El Jefe", "Spawn El Jefe", {
+    params ["_position", "_object"];
+    
+    [[_position], "user\scripts\spawnJefe.sqf"] remoteExec ["BIS_fnc_execVM", 2];
+     
+}] call zen_custom_modules_fnc_register;
 
 
 ["Dushmaan Taal - GRAD Leavenotes", "Spawn Note", {
