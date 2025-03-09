@@ -108,6 +108,14 @@
      
 }] call zen_custom_modules_fnc_register;
 
+["CO Rotorhead - Drug People", "Fanatics ambush players", {
+    params ["_position", "_object"];
+    
+    missionNameSpace setVariable ["grad_ambushplayers", true, true];
+     
+}] call zen_custom_modules_fnc_register;
+
+
 
 ["Dushmaan Taal - GRAD Leavenotes", "Spawn Note", {
           params ["_modulePosition"]; 
